@@ -1,0 +1,14 @@
+springdoc:
+  swagger-ui:
+    urls[1]:
+      name: BON Service APIs
+      url: /bon/v3/api-docs
+    urls[2]:
+      name: PRODUITS Service APIs
+      url: /products/v3/api-docs
+    urls[3]:
+      url: /compte/v3/api-docs
+      name: COMPTE Service APIs
+    urls[0]:
+      url: /auth/v3/api-docs
+      name: AUTHENTIFICATION Service APIs
