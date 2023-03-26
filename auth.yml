@@ -4,7 +4,7 @@ spring:
     url: jdbc:postgresql://localhost:5433/db-auth
     username: postgres
     password: P@@SSword2121
-    
+    initialization-mode: always
 
   mvc:
     pathmatch:
@@ -28,4 +28,11 @@ logging:
     org.springframework: info
     org.hibernate: debug
 
+jackson:
+    deserialization:
+      FAIL_ON_IGNORED_PROPERTIES: false
+    serialization:
+      INDENT_OUTPUT: false
+      WRITE_DATES_AS_TIMESTAMPS: false
+      WRITE_BIGDECIMAL_AS_PLAIN: true
 
